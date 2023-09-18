@@ -9,7 +9,11 @@ root.render(
   <React.StrictMode>
     <h1>Weather App</h1>
     <SearchEngine />
-    <a href="https://github.com/Arinuccia/weather-app-react">
+    <a
+      href="https://github.com/Arinuccia/weather-app-react"
+      target="_blank"
+      rel="noreferrer"
+    >
       Open-source code
     </a>
     , by Oryna Iastremska
