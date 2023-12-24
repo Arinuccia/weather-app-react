@@ -13,6 +13,7 @@ export default function SearchEngine(props) {
   function updateCity(event) {
     setCity(event.target.value);
   }
+
   function displayWeather(response) {
     setLoaded(true);
     setWeather({
@@ -20,13 +21,25 @@ export default function SearchEngine(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      city: response.data.name,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   let form = (
     <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Enter a city" onChange={updateCity} />
-      <input type="submit" value="Search" />
+      <div className="row">
+        <div className="col-9">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            className="form-control"
+            onChange={updateCity}
+          />
+        </div>
+        <div className="col-3">
+          <input type="submit" value="Search" />
+        </div>
+      </div>
     </form>
   );
   if (loaded) {
