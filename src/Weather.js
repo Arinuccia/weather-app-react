@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 export default function Weather() {
   return (
     <div className="Weather">
@@ -11,26 +12,26 @@ export default function Weather() {
       <div className="row">
         <div className="col-12">
           <ul>
-            <li>6C</li>
+            <li className="temperature">6C</li>
             <li>Affirmation</li>
           </ul>
         </div>
 
         <div className="col-12">
-          <ul>
+          <ul className="description">
             <li>Wind</li>
             <li>Humidity</li>
           </ul>
         </div>
       </div>
-      <div>
+      <div className="button1">
         <button>Get an affirmation</button>
       </div>
-      <div>
+      <div className="button1">
         <button>Get a playlist for my weather</button>
       </div>
-      <div className="row">
-        <div className="col-2">
+      <div className="row ">
+        <div className="col-2 forecast">
           <ul>
             <li>Mon</li>
             <li>Temp</li>
@@ -39,7 +40,7 @@ export default function Weather() {
           </ul>
         </div>
 
-        <div className="col-2">
+        <div className="col-2 forecast">
           <ul>
             <li>Tue</li>
             <li>Temp</li>
@@ -48,7 +49,7 @@ export default function Weather() {
           </ul>
         </div>
 
-        <div className="col-2">
+        <div className="col-2 forecast">
           <ul>
             <li>Wed</li>
             <li>Temp</li>
@@ -57,7 +58,7 @@ export default function Weather() {
           </ul>
         </div>
 
-        <div className="col-2">
+        <div className="col-2 forecast">
           <ul>
             <li>Thu</li>
             <li>Temp</li>
@@ -65,7 +66,7 @@ export default function Weather() {
             <li>Description</li>
           </ul>
         </div>
-        <div className="col-2">
+        <div className="col-2 forecast">
           <ul>
             <li>Fri</li>
             <li>Temp</li>
