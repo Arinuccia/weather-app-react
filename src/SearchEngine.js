@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 export default function SearchEngine(props) {
   const [weather, setWeather] = useState({});
   const [city, setCity] = useState("");
@@ -36,7 +37,7 @@ export default function SearchEngine(props) {
             onChange={updateCity}
           />
         </div>
-        <div className="col-3">
+        <div className="col-3 ">
           <input type="submit" value="Search" />
         </div>
       </div>

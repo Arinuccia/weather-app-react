@@ -35,3 +35,7 @@ button:hover {
   padding: 0px;
   margin: 10px 15px;
 }
+
+form {
+  margin: 20px;
+}
