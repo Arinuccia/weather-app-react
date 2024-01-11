@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import SearchEngine from "./SearchEngine";
 import Weather from "./Weather";
+import Button from "./Button";
+import Forecast from "./Forecast";
+import "./App.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -10,6 +13,9 @@ root.render(
   <React.StrictMode>
     <SearchEngine />
     <Weather />
+    <Button />
+    <Forecast />
+    <br />
     <a
       href="https://github.com/Arinuccia/weather-app-react"
       target="_blank"
